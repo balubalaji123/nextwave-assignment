@@ -13,6 +13,9 @@ function App() {
           <Routes>
             <Route path="/add-resource" element={<ResourceForm />} />
             <Route path="/" element={<MainContent />} />
+            <Route path="/nextwave-assignment/" element={<MainContent />} />
+
+            
           </Routes>
         </div>
       </div>
