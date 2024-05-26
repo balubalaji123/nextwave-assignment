@@ -1,18 +1,40 @@
+.resource-form-container {
+  display: flex;
+  flex-direction: row;
+}
+.resource-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  flex: 1 1;
+  flex-direction:column;
+  background:#f0eded;
+}
 .addResourceForm {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-top: 30px;
 }
-
-.addResourceForm label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
+.resource-form-image {
+  img {
+    height: 600px;
+    width: 720px;
+  }
 }
-
-.addResourceForm input,
-.addResourceForm textarea {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.resource-form-heading{
+  font-size:30px;
+}
+.error-msg{
+  color:red;
+}
+.resource-form-button{
+  cursor:pointer;
+  background: #0B69FF;
+  width:83px;
+  height:35px;
+  color:white;
+  border-radius:1px solid white;
+  
 }
