@@ -6,7 +6,7 @@ import Personlogo from "../images/person.png";
 function Header() {
   return (
     <div className="header">
-      <Link to="/">
+      <Link to="/nextwave-assignment">
         <img src={logo} alt="NXT Wave" className="logo" />
       </Link>
       <div className="profile">
