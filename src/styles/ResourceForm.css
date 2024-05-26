@@ -1,0 +1,18 @@
+.addResourceForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addResourceForm label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.addResourceForm input,
+.addResourceForm textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

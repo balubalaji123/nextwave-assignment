@@ -1,0 +1,19 @@
+.resources {
+  display: flex;
+  gap: 20px;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.resource-form {
+  flex: 1;
+}
+

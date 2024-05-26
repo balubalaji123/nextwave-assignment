@@ -1,0 +1,22 @@
+.filter-search {
+  margin-left: 9%;
+  padding-top: 30px;
+  input {
+    width: 648px;
+    height: 40px;
+    border: 1px solid #d7dfe9;
+  }
+}
+input:focus {
+  border: 1px solid #d7dfe9;
+}
+input::placeholder {
+  color: gray;
+  font-style: italic;
+  opacity: 1;
+  padding-left:20px;
+}
+
+input:focus::placeholder {
+  color: lightgray;
+}

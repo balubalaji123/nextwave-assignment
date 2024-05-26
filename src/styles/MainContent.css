@@ -1,0 +1,25 @@
+.main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tabs button {
+    width:200px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border: none;
+  }
+  
+  .tabs button.active {
+    background-color: #0B69FF;
+    color: white;
+  }
+  

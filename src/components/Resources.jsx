@@ -1,22 +1,27 @@
-import React, { useState } from 'react';
-import ResourceList from './ResourceList';
-import '../styles/Resources.css'
+import React, { useState } from "react";
+import ResourceList from "./ResourceList";
+import "../styles/Resources.css";
+import Filter from "./Filter";
 
-function Resources() {
-  const [resources] = useState([
-    { name: 'Dropbox, Inc.', link: 'www.dropbox.com', description: 'Dropbox is a file hosting service' },
-    { name: 'Slack', link: 'www.slack.com', description: 'Slack brings the team together' },
-    // Add more resources as needed
-  ]);
+function Resources({ resources }) {
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
 
-  // const addResource = (resource) => {
-  //   setResources([...resources, resource]);
-  // };
-
+  const filteredResources = resources.filter((resource) => {
+    const matchesSearchTerm =
+      searchTerm === "" ||
+      resource.title.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesSearchTerm;
+  });
   return (
-    <div className="resources">
-      <ResourceList resources={resources} />
-      {/* <ResourceForm addResource={addResource} /> */}
+    <div>
+      <Filter  onSearch={handleSearch} />
+      <div className="resources">
+        <ResourceList resources={filteredResources} />
+        {/* <ResourceForm addResource={addResource} /> */}
+      </div>
     </div>
   );
 }
